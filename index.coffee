@@ -10,7 +10,6 @@ locators = [
   'buttonText'
   'partialButtonText'
   'cssContainingText'
-  'deepCss'
 ]
 
 locator = (type) -> (value) ->
