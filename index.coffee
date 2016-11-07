@@ -12,9 +12,9 @@ locators = [
   'cssContainingText'
 ]
 
-locator = (type) -> (value) ->
+locator = (type) -> (values...) ->
   locator: type
-  value: value
+  value: values
 
 objects = {}
 module.exports = do ->

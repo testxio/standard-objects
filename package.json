@@ -1,11 +1,14 @@
 {
   "name": "testx-standard-objects",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Standard objects for TestX",
   "main": "index.coffee",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/coffee-script/bin/coffee tests.coffee"
   },
   "author": "Greyarch BV",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.11.1"
+  }
 }
