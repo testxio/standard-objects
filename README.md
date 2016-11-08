@@ -28,7 +28,7 @@ Use these as any other (functional) object reference:
 ```
 
 ## Available objects
-This package exposes almost all non-angular protractor (web driver++) element locators:
+This package exposes almost all non-angular protractor (web driver++) element locators. It also adds some custom ones.
 
 | Object reference                | Description |
 | ---------------------- | ------------- | --------------- |------------ | ---------------------------- |
@@ -43,5 +43,6 @@ This package exposes almost all non-angular protractor (web driver++) element lo
 |[buttonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.buttonText)|Find a button by text.|
 |[partialButtonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.partialButtonText)|Find a button by partial text.|
 |[cssContainingText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.cssContainingText)|Find elements by CSS which contain a certain string.|
+|labeled|Find elements by the text of their label. The label **for** attribute has to be the same as the element **id**, in other words, that's the label for this element, say input box. *This object is implemented via custom locator.*|
 
 **NOTE: All of the above are also available as locators in your normal object map implementation. Use the standard objects sparingly to avoid ending up with fragile set of tests.**
