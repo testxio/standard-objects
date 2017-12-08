@@ -31,7 +31,7 @@ Use these as any other (functional) object reference:
 This package exposes almost all non-angular protractor (web driver++) element locators. It also adds some custom ones.
 
 | Object reference                | Description |
-| ---------------------- | ------------- | --------------- |------------ | ---------------------------- |
+| ---------------------- | ------------- |
 |[css](http://www.protractortest.org/#/api?view=webdriver.By.css)|Locates elements using a CSS selector.|
 |[xpath](http://www.protractortest.org/#/api?view=webdriver.By.xpath)|Locates elements matching a XPath selector.|
 |[id](http://www.protractortest.org/#/api?view=webdriver.By.id)|Locates an element by its ID.|
