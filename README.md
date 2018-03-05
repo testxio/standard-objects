@@ -1,20 +1,23 @@
 # TestX Standard objects
+
 This package contains standard objects for [testx](http://testx.io/testx).
 
-
 ## Installation
+
 Install the package with:
+
 ```bash
-npm install testx-standard-objects --save
+npm install @testx/objects-standard --save
 ```
 
 Add to your tests like any other **testx** node module. In your config file, as part of the onPrepare function:
 
-```CoffeeScript
-testx.objects.add require 'testx-standard-objects'
+```JavaScript
+testx.objects.add(require('@testx/objects-standard'))
 ```
 
 ## Usage
+
 Use these as any other (functional) object reference:
 
 ```yaml
@@ -28,21 +31,22 @@ Use these as any other (functional) object reference:
 ```
 
 ## Available objects
+
 This package exposes almost all non-angular protractor (web driver++) element locators. It also adds some custom ones.
 
-| Object reference                | Description |
-| ---------------------- | ------------- |
-|[css](http://www.protractortest.org/#/api?view=webdriver.By.css)|Locates elements using a CSS selector.|
-|[xpath](http://www.protractortest.org/#/api?view=webdriver.By.xpath)|Locates elements matching a XPath selector.|
-|[id](http://www.protractortest.org/#/api?view=webdriver.By.id)|Locates an element by its ID.|
-|[name](http://www.protractortest.org/#/api?view=webdriver.By.name)|Locates elements whose name attribute has the given value.|
-|[linkText](http://www.protractortest.org/#/api?view=webdriver.By.linkText)|Locates link elements whose visible text matches the given string.|
-|[partialLinkText](http://www.protractortest.org/#/api?view=webdriver.By.partialLinkText)|Locates link elements whose visible text contains the given substring.|
-|[className](http://www.protractortest.org/#/api?view=webdriver.By.className)|Locates elements that have a specific class name.|
-|[tagName](http://www.protractortest.org/#/api?view=webdriver.By.tagName)|Locates elements with a given tag name.|
-|[buttonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.buttonText)|Find a button by text.|
-|[partialButtonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.partialButtonText)|Find a button by partial text.|
-|[cssContainingText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.cssContainingText)|Find elements by CSS which contain a certain string.|
-|labeled|Find elements by the text of their label. The label **for** attribute has to be the same as the element **id**, in other words, that's the label for this element, say input box. *This object is implemented via custom locator.*|
+| Object reference                                                                                       | Description                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [css](http://www.protractortest.org/#/api?view=webdriver.By.css)                                       | Locates elements using a CSS selector.                                                                                                                                                                                             |
+| [xpath](http://www.protractortest.org/#/api?view=webdriver.By.xpath)                                   | Locates elements matching a XPath selector.                                                                                                                                                                                        |
+| [id](http://www.protractortest.org/#/api?view=webdriver.By.id)                                         | Locates an element by its ID.                                                                                                                                                                                                      |
+| [name](http://www.protractortest.org/#/api?view=webdriver.By.name)                                     | Locates elements whose name attribute has the given value.                                                                                                                                                                         |
+| [linkText](http://www.protractortest.org/#/api?view=webdriver.By.linkText)                             | Locates link elements whose visible text matches the given string.                                                                                                                                                                 |
+| [partialLinkText](http://www.protractortest.org/#/api?view=webdriver.By.partialLinkText)               | Locates link elements whose visible text contains the given substring.                                                                                                                                                             |
+| [className](http://www.protractortest.org/#/api?view=webdriver.By.className)                           | Locates elements that have a specific class name.                                                                                                                                                                                  |
+| [tagName](http://www.protractortest.org/#/api?view=webdriver.By.tagName)                               | Locates elements with a given tag name.                                                                                                                                                                                            |
+| [buttonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.buttonText)               | Find a button by text.                                                                                                                                                                                                             |
+| [partialButtonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.partialButtonText) | Find a button by partial text.                                                                                                                                                                                                     |
+| [cssContainingText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.cssContainingText) | Find elements by CSS which contain a certain string.                                                                                                                                                                               |
+| labeled                                                                                                | Find elements by the text of their label. The label **for** attribute has to be the same as the element **id**, in other words, that's the label for this element, say input box. _This object is implemented via custom locator._ |
 
 **NOTE: All of the above are also available as locators in your normal object map implementation. Use the standard objects sparingly to avoid ending up with fragile set of tests.**

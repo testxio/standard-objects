@@ -1,14 +1,8 @@
 {
-  "name": "testx-standard-objects",
-  "version": "0.2.0",
+  "name": "@testx/objects-standard",
+  "version": "1.0.0",
   "description": "Standard objects for TestX",
-  "main": "index.coffee",
-  "scripts": {
-    "test": "node_modules/coffee-script/bin/coffee tests.coffee"
-  },
+  "main": "index.js",
   "author": "Greyarch BV",
-  "license": "ISC",
-  "devDependencies": {
-    "coffee-script": "^1.11.1"
-  }
+  "license": "ISC"
 }
