@@ -1,8 +1,12 @@
 {
   "name": "@testx/objects-standard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Standard objects for TestX",
   "main": "index.js",
   "author": "Greyarch BV",
-  "license": "ISC"
+  "license": "GPLv3",
+  "scripts": {
+    "test": "node tests.js",
+    "prepublish": "npm test"
+  }
 }
