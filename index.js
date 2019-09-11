@@ -9,7 +9,8 @@ const locators = [
   "tagName",
   "buttonText",
   "partialButtonText",
-  "cssContainingText"
+  "cssContainingText",
+  "deepCss"
 ];
 
 const locator = type => (...values) => ({

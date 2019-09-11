@@ -72,3 +72,4 @@ This package exposes almost all non-angular protractor (web driver++) element lo
 | [buttonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.buttonText)               | Find a button by text.                                                 |
 | [partialButtonText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.partialButtonText) | Find a button by partial text.                                         |
 | [cssContainingText](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.cssContainingText) | Find elements by CSS which contain a certain string.                   |
+| [deepCss](http://www.protractortest.org/#/api?view=ProtractorBy.prototype.deepCss) | Find an element by css selector within the Shadow DOM.                   |
